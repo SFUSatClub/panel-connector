@@ -78,17 +78,15 @@ F 3 "" H 6325 3225 60  0001 C CNN
 	1    6325 3225
 	1    0    0    -1  
 $EndComp
-Text HLabel 3125 3300 0    60   Input ~ 0
+Text HLabel 3250 2850 3    60   Input ~ 0
 SDA
-Text HLabel 3125 3450 0    60   Input ~ 0
+Text HLabel 3150 2850 3    60   Input ~ 0
 SCL
-Text HLabel 3125 3600 0    60   Input ~ 0
+Text HLabel 7250 3975 0    60   Input ~ 0
 PWR+
-Text HLabel 3125 3725 0    60   Input ~ 0
+Text HLabel 7250 4100 0    60   Input ~ 0
 PWR-
-Text HLabel 3125 3175 0    60   Input ~ 0
-3V3
-Text HLabel 3125 3050 0    60   Input ~ 0
+Text HLabel 4550 2175 2    60   Input ~ 0
 SUN_SENSOR
 $Comp
 L CONN-TAB J9
@@ -135,4 +133,184 @@ F 3 "" H 6300 5125 60  0001 C CNN
 	1    6300 5125
 	1    0    0    -1  
 $EndComp
+$Comp
+L GND #PWR09
+U 1 1 5A77C7B4
+P 3750 2775
+AR Path="/5A75FCD1/5A77C7B4" Ref="#PWR09"  Part="1" 
+AR Path="/5A7794AF/5A77C7B4" Ref="#PWR013"  Part="1" 
+AR Path="/5A77B241/5A77C7B4" Ref="#PWR017"  Part="1" 
+AR Path="/5A77B249/5A77C7B4" Ref="#PWR021"  Part="1" 
+F 0 "#PWR09" H 3750 2525 50  0001 C CNN
+F 1 "GND" H 3750 2625 50  0000 C CNN
+F 2 "" H 3750 2775 50  0001 C CNN
+F 3 "" H 3750 2775 50  0001 C CNN
+	1    3750 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R24
+U 1 1 5A77CA81
+P 4125 2425
+AR Path="/5A7794AF/5A77CA81" Ref="R24"  Part="1" 
+AR Path="/5A75FCD1/5A77CA81" Ref="R20"  Part="1" 
+AR Path="/5A77B241/5A77CA81" Ref="R28"  Part="1" 
+AR Path="/5A77B249/5A77CA81" Ref="R32"  Part="1" 
+F 0 "R20" V 4205 2425 50  0000 C CNN
+F 1 "R" V 4125 2425 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4055 2425 50  0001 C CNN
+F 3 "" H 4125 2425 50  0001 C CNN
+	1    4125 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5A77CAE9
+P 4375 2425
+AR Path="/5A75FCD1/5A77CAE9" Ref="C1"  Part="1" 
+AR Path="/5A7794AF/5A77CAE9" Ref="C2"  Part="1" 
+AR Path="/5A77B241/5A77CAE9" Ref="C3"  Part="1" 
+AR Path="/5A77B249/5A77CAE9" Ref="C4"  Part="1" 
+F 0 "C1" H 4400 2525 50  0000 L CNN
+F 1 "C" H 4400 2325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4413 2275 50  0001 C CNN
+F 3 "" H 4375 2425 50  0001 C CNN
+	1    4375 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L C 0.1uF1
+U 1 1 5A77CB6C
+P 3500 1650
+AR Path="/5A75FCD1/5A77CB6C" Ref="0.1uF1"  Part="1" 
+AR Path="/5A7794AF/5A77CB6C" Ref="0.1uF2"  Part="1" 
+AR Path="/5A77B241/5A77CB6C" Ref="0.1uF3"  Part="1" 
+AR Path="/5A77B249/5A77CB6C" Ref="0.1uF4"  Part="1" 
+F 0 "0.1uF1" H 3525 1750 50  0000 L CNN
+F 1 "C" H 3525 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3538 1500 50  0001 C CNN
+F 3 "" H 3500 1650 50  0001 C CNN
+	1    3500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5A77DD2C
+P 3500 1850
+AR Path="/5A75FCD1/5A77DD2C" Ref="#PWR010"  Part="1" 
+AR Path="/5A7794AF/5A77DD2C" Ref="#PWR014"  Part="1" 
+AR Path="/5A77B241/5A77DD2C" Ref="#PWR018"  Part="1" 
+AR Path="/5A77B249/5A77DD2C" Ref="#PWR022"  Part="1" 
+F 0 "#PWR010" H 3500 1600 50  0001 C CNN
+F 1 "GND" H 3500 1700 50  0000 C CNN
+F 2 "" H 3500 1850 50  0001 C CNN
+F 3 "" H 3500 1850 50  0001 C CNN
+	1    3500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5A77DD64
+P 4125 2625
+AR Path="/5A75FCD1/5A77DD64" Ref="#PWR011"  Part="1" 
+AR Path="/5A7794AF/5A77DD64" Ref="#PWR015"  Part="1" 
+AR Path="/5A77B241/5A77DD64" Ref="#PWR019"  Part="1" 
+AR Path="/5A77B249/5A77DD64" Ref="#PWR023"  Part="1" 
+F 0 "#PWR011" H 4125 2375 50  0001 C CNN
+F 1 "GND" H 4125 2475 50  0000 C CNN
+F 2 "" H 4125 2625 50  0001 C CNN
+F 3 "" H 4125 2625 50  0001 C CNN
+	1    4125 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 5A77DD9C
+P 4375 2625
+AR Path="/5A75FCD1/5A77DD9C" Ref="#PWR012"  Part="1" 
+AR Path="/5A7794AF/5A77DD9C" Ref="#PWR016"  Part="1" 
+AR Path="/5A77B241/5A77DD9C" Ref="#PWR020"  Part="1" 
+AR Path="/5A77B249/5A77DD9C" Ref="#PWR024"  Part="1" 
+F 0 "#PWR012" H 4375 2375 50  0001 C CNN
+F 1 "GND" H 4375 2475 50  0000 C CNN
+F 2 "" H 4375 2625 50  0001 C CNN
+F 3 "" H 4375 2625 50  0001 C CNN
+	1    4375 2625
+	1    0    0    -1  
+$EndComp
+Text HLabel 3450 2850 3    60   Input ~ 0
+A0
+Text HLabel 3550 2850 3    60   Input ~ 0
+A1
+$Comp
+L R R19
+U 1 1 5A780898
+P 3650 3225
+AR Path="/5A75FCD1/5A780898" Ref="R19"  Part="1" 
+AR Path="/5A7794AF/5A780898" Ref="R23"  Part="1" 
+AR Path="/5A77B241/5A780898" Ref="R27"  Part="1" 
+AR Path="/5A77B249/5A780898" Ref="R31"  Part="1" 
+F 0 "R19" V 3730 3225 50  0000 C CNN
+F 1 "R" V 3650 3225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3580 3225 50  0001 C CNN
+F 3 "" H 3650 3225 50  0001 C CNN
+	1    3650 3225
+	1    0    0    -1  
+$EndComp
+Text HLabel 3650 3475 3    60   Input ~ 0
+3V3
+Text Label 3650 3050 1    60   ~ 0
+!RESET
+Text HLabel 3650 1425 2    60   Input ~ 0
+3V3
+Wire Wire Line
+	3550 2175 4550 2175
+Wire Wire Line
+	4375 2175 4375 2275
+Connection ~ 4375 2175
+Wire Wire Line
+	4125 2275 4125 2175
+Connection ~ 4125 2175
+Wire Wire Line
+	3500 1500 3500 1425
+Wire Wire Line
+	3150 1425 3650 1425
+Wire Wire Line
+	3150 1425 3150 1625
+Wire Wire Line
+	3500 1800 3500 1850
+Wire Wire Line
+	4125 2575 4125 2625
+Wire Wire Line
+	4375 2575 4375 2625
+Wire Wire Line
+	3750 2725 3750 2775
+Wire Wire Line
+	3650 2725 3650 3075
+Wire Wire Line
+	3650 3375 3650 3475
+Wire Wire Line
+	3550 2850 3550 2725
+Wire Wire Line
+	3450 2725 3450 2850
+Connection ~ 3500 1425
+$Comp
+L ADG728 U1
+U 1 1 5A77B92A
+P 3150 2175
+AR Path="/5A75FCD1/5A77B92A" Ref="U1"  Part="1" 
+AR Path="/5A7794AF/5A77B92A" Ref="U2"  Part="1" 
+AR Path="/5A77B241/5A77B92A" Ref="U3"  Part="1" 
+AR Path="/5A77B249/5A77B92A" Ref="U4"  Part="1" 
+F 0 "U1" H 3300 2525 60  0000 C CNN
+F 1 "ADG728" H 2850 2675 60  0000 C CNN
+F 2 "SFUSat:TSSOP-16" H 3150 1675 60  0001 C CNN
+F 3 "" H 3150 1675 60  0001 C CNN
+	1    3150 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2725 3150 2850
+Wire Wire Line
+	3250 2850 3250 2675
 $EndSCHEMATC
