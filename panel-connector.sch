@@ -1,0 +1,184 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SFUSat
+LIBS:SFUSat-power
+LIBS:panel-connector-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6525 1348 1525 1075
+U 5A75FCD1
+F0 "Port_X+" 60
+F1 "port.sch" 60
+F2 "SDA" I L 6525 1748 60 
+F3 "SCL" I L 6525 1873 60 
+F4 "PWR+" I R 8050 1675 60 
+F5 "PWR-" I R 8050 1950 60 
+F6 "3V3" I L 6525 1498 60 
+F7 "SUN_SENSOR" I L 6525 2073 60 
+$EndSheet
+$Comp
+L PC104-8BIT J1
+U 1 1 5A76020E
+P 2475 3225
+F 0 "J1" H 2725 1575 60  0000 C CNN
+F 1 "PC104-8BIT" H 2425 4975 60  0000 C CNN
+F 2 "SFUSat:PC104-8bit" H 2475 4225 60  0001 C CNN
+F 3 "" H 2475 4225 60  0001 C CNN
+	1    2475 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC104PTH J4
+U 1 1 5A7602A7
+P 4575 1475
+F 0 "J4" H 4575 1325 60  0000 C CNN
+F 1 "PC104PTH" H 4575 1625 60  0000 C CNN
+F 2 "SFUSat:PC104PTH" H 4575 1475 60  0001 C CNN
+F 3 "" H 4575 1475 60  0001 C CNN
+	1    4575 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC104PTH J5
+U 1 1 5A7603F0
+P 4575 1900
+F 0 "J5" H 4575 1750 60  0000 C CNN
+F 1 "PC104PTH" H 4575 2050 60  0000 C CNN
+F 2 "SFUSat:PC104PTH" H 4575 1900 60  0001 C CNN
+F 3 "" H 4575 1900 60  0001 C CNN
+	1    4575 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC104PTH J3
+U 1 1 5A76042B
+P 4575 1050
+F 0 "J3" H 4575 900 60  0000 C CNN
+F 1 "PC104PTH" H 4575 1200 60  0000 C CNN
+F 2 "SFUSat:PC104PTH" H 4575 1050 60  0001 C CNN
+F 3 "" H 4575 1050 60  0001 C CNN
+	1    4575 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC104PTH J2
+U 1 1 5A76049F
+P 4575 625
+F 0 "J2" H 4575 475 60  0000 C CNN
+F 1 "PC104PTH" H 4575 775 60  0000 C CNN
+F 2 "SFUSat:PC104PTH" H 4575 625 60  0001 C CNN
+F 3 "" H 4575 625 60  0001 C CNN
+	1    4575 625 
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6525 2600 1525 1075
+U 5A7794AF
+F0 "Port_X-" 60
+F1 "port.sch" 60
+F2 "SDA" I L 6525 3000 60 
+F3 "SCL" I L 6525 3125 60 
+F4 "PWR+" I R 8050 2925 60 
+F5 "PWR-" I R 8050 3200 60 
+F6 "3V3" I L 6525 2750 60 
+F7 "SUN_SENSOR" I L 6525 3325 60 
+$EndSheet
+$Sheet
+S 6525 3875 1525 1075
+U 5A77B241
+F0 "Port_Y+" 60
+F1 "port.sch" 60
+F2 "SDA" I L 6525 4275 60 
+F3 "SCL" I L 6525 4400 60 
+F4 "PWR+" I R 8050 4200 60 
+F5 "PWR-" I R 8050 4475 60 
+F6 "3V3" I L 6525 4025 60 
+F7 "SUN_SENSOR" I L 6525 4600 60 
+$EndSheet
+$Sheet
+S 6525 5125 1525 1075
+U 5A77B249
+F0 "Port_Y-" 60
+F1 "port.sch" 60
+F2 "SDA" I L 6525 5525 60 
+F3 "SCL" I L 6525 5650 60 
+F4 "PWR+" I R 8050 5450 60 
+F5 "PWR-" I R 8050 5725 60 
+F6 "3V3" I L 6525 5275 60 
+F7 "SUN_SENSOR" I L 6525 5850 60 
+$EndSheet
+Wire Wire Line
+	8200 1950 8200 5725
+Wire Wire Line
+	8200 5725 8050 5725
+Wire Wire Line
+	8050 5450 8250 5450
+Wire Wire Line
+	8250 5450 8250 1675
+Wire Wire Line
+	8050 2925 8250 2925
+Connection ~ 8250 2925
+Wire Wire Line
+	8050 3200 8200 3200
+Connection ~ 8200 3200
+Wire Wire Line
+	8050 4200 8250 4200
+Connection ~ 8250 4200
+Wire Wire Line
+	8050 4475 8200 4475
+Connection ~ 8200 4475
+Wire Wire Line
+	8050 1950 8200 1950
+Wire Wire Line
+	8250 1675 8050 1675
+Wire Wire Line
+	6375 1375 6375 5850
+Wire Wire Line
+	6300 1375 6300 5850
+Wire Wire Line
+	6225 1375 6225 5850
+$EndSCHEMATC

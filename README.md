@@ -1,5 +1,5 @@
-# CubeSat-Radio
-KiCad project of the cubesat radio test article in preparation for the Canadian Satellite Design Challenge
+# panel-connector
+KiCad project of the connector board connecting the 4 outer panels to the internal PC104 stackup.
 
 This repository uses the SFU Satellite Team's KiCad component library as a submodule.
 To start working on the repository:
@@ -13,4 +13,4 @@ To start working on the repository:
 ```
 
 If you modify either the component schematic or footprint libraries you must push those changes to the SFUSatClub/KiCad-Lib repository.
-# panel-connector
+
