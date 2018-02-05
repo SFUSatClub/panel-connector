@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 13
 Title ""
 Date ""
 Rev ""
@@ -83,9 +83,9 @@ SDA
 Text HLabel 3150 2850 3    60   Input ~ 0
 SCL
 Text HLabel 7250 3975 0    60   Input ~ 0
-PWR+
+PWR_1+
 Text HLabel 7250 4100 0    60   Input ~ 0
-PWR-
+PWR_1-
 Text HLabel 4550 2175 2    60   Input ~ 0
 SUN_SENSOR
 $Comp
@@ -313,4 +313,8 @@ Wire Wire Line
 	3150 2725 3150 2850
 Wire Wire Line
 	3250 2850 3250 2675
+Text HLabel 7250 4250 0    60   Input ~ 0
+PWR_2+
+Text HLabel 7250 4375 0    60   Input ~ 0
+PWR_2-
 $EndSCHEMATC
