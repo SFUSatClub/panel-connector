@@ -1,4 +1,4 @@
-update=Sat 03 Feb 2018 10:03:12 AM PST
+update=Mon 05 Feb 2018 08:23:37 PM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,13 @@ LibName31=contrib
 LibName32=valves
 LibName33=KiCad-Lib/SFUSat
 LibName34=KiCad-Lib/SFUSat-power
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
