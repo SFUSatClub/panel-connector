@@ -3,7 +3,6 @@ LIBS:power
 LIBS:device
 LIBS:switches
 LIBS:relays
-LIBS:motors
 LIBS:transistors
 LIBS:conn
 LIBS:linear
@@ -33,6 +32,9 @@ LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
 LIBS:SFUSat-power
+LIBS:SFUSat-cap
+LIBS:SFUSat-ind
+LIBS:SFUSat-res
 LIBS:panel-connector-cache
 EELAYER 25 0
 EELAYER END
