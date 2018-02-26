@@ -4093,6 +4093,11 @@
       (net 68 /MPPT_X+_1/PV+))
     (pad 2 smd rect (at 3 0) (size 2 4.5) (layers F.Cu F.Paste F.Mask)
       (net 168 /MPPT_X+_1/LX))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-ind.pretty/L2220.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat-ind:L_2220 (layer F.Cu) (tedit 5A894CBA) (tstamp 5A89689C)
@@ -4116,6 +4121,11 @@
       (net 71 /MPPT_X+_2/PV+))
     (pad 2 smd rect (at 3 0) (size 2 4.5) (layers F.Cu F.Paste F.Mask)
       (net 169 /MPPT_X+_2/LX))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-ind.pretty/L2220.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat-ind:L_2220 (layer F.Cu) (tedit 5A894CBA) (tstamp 5A8968AA)
@@ -4139,6 +4149,11 @@
       (net 72 /MPPT_X-_1/PV+))
     (pad 2 smd rect (at 3 0 270) (size 2 4.5) (layers F.Cu F.Paste F.Mask)
       (net 170 /MPPT_X-_1/LX))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-ind.pretty/L2220.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat-ind:L_2220 (layer F.Cu) (tedit 5A894CBA) (tstamp 5A8968B8)
@@ -4162,6 +4177,11 @@
       (net 74 /MPPT_X-_2/PV+))
     (pad 2 smd rect (at 3 0 270) (size 2 4.5) (layers F.Cu F.Paste F.Mask)
       (net 171 /MPPT_X-_2/LX))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-ind.pretty/L2220.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat-ind:L_2220 (layer F.Cu) (tedit 5A894CBA) (tstamp 5A8968C6)
@@ -4185,6 +4205,11 @@
       (net 75 /MPPT_Y+_1/PV+))
     (pad 2 smd rect (at 3 0 270) (size 2 4.5) (layers F.Cu F.Paste F.Mask)
       (net 172 /MPPT_Y+_1/LX))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-ind.pretty/L2220.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat-ind:L_2220 (layer F.Cu) (tedit 5A894CBA) (tstamp 5A8968D4)
@@ -4208,6 +4233,11 @@
       (net 77 /MPPT_Y+_2/PV+))
     (pad 2 smd rect (at 3 0 270) (size 2 4.5) (layers F.Cu F.Paste F.Mask)
       (net 173 /MPPT_Y+_2/LX))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-ind.pretty/L2220.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat-ind:L_2220 (layer F.Cu) (tedit 5A894CBA) (tstamp 5A8968E2)
@@ -4231,6 +4261,11 @@
       (net 78 /MPPT_Y-_1/PV+))
     (pad 2 smd rect (at 3 0 270) (size 2 4.5) (layers F.Cu F.Paste F.Mask)
       (net 174 /MPPT_Y-_1/LX))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-ind.pretty/L2220.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat-ind:L_2220 (layer F.Cu) (tedit 5A8960BA) (tstamp 5A8968F0)
@@ -4254,6 +4289,11 @@
       (net 80 /MPPT_Y-_2/PV+))
     (pad 2 smd rect (at 3 0 270) (size 2 4.5) (layers F.Cu F.Paste F.Mask)
       (net 175 /MPPT_Y-_2/LX))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-ind.pretty/L2220.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat-res:R_0805 (layer F.Cu) (tedit 5A780E5A) (tstamp 5A8968F6)
@@ -4429,7 +4469,7 @@
       (net 160 /MPPT_X+_1/MPPT_OUT) (solder_paste_margin -0.05))
     (pad 2 smd rect (at 1.5 0 90) (size 1 1.6) (layers F.Cu F.Paste F.Mask)
       (net 70 /MPPT_X+_1/VOUT+) (solder_paste_margin -0.05))
-    (model Capacitors_SMD.3dshapes/C_1206.wrl
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-res.pretty/R1206.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4681,7 +4721,7 @@
       (net 161 /MPPT_X+_2/MPPT_OUT) (solder_paste_margin -0.05))
     (pad 2 smd rect (at 1.5 0 90) (size 1 1.6) (layers F.Cu F.Paste F.Mask)
       (net 69 /MPPT_X+_1/PV-) (solder_paste_margin -0.05))
-    (model Capacitors_SMD.3dshapes/C_1206.wrl
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-res.pretty/R1206.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4933,7 +4973,7 @@
       (net 162 /MPPT_X-_1/MPPT_OUT) (solder_paste_margin -0.05))
     (pad 2 smd rect (at 1.5 0) (size 1 1.6) (layers F.Cu F.Paste F.Mask)
       (net 70 /MPPT_X+_1/VOUT+) (solder_paste_margin -0.05))
-    (model Capacitors_SMD.3dshapes/C_1206.wrl
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-res.pretty/R1206.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5185,7 +5225,7 @@
       (net 163 /MPPT_X-_2/MPPT_OUT) (solder_paste_margin -0.05))
     (pad 2 smd rect (at 1.5 0) (size 1 1.6) (layers F.Cu F.Paste F.Mask)
       (net 73 /MPPT_X-_1/PV-) (solder_paste_margin -0.05))
-    (model Capacitors_SMD.3dshapes/C_1206.wrl
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-res.pretty/R1206.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5437,7 +5477,7 @@
       (net 164 /MPPT_Y+_1/MPPT_OUT) (solder_paste_margin -0.05))
     (pad 2 smd rect (at 1.5 0) (size 1 1.6) (layers F.Cu F.Paste F.Mask)
       (net 70 /MPPT_X+_1/VOUT+) (solder_paste_margin -0.05))
-    (model Capacitors_SMD.3dshapes/C_1206.wrl
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-res.pretty/R1206.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5689,7 +5729,7 @@
       (net 165 /MPPT_Y+_2/MPPT_OUT) (solder_paste_margin -0.05))
     (pad 2 smd rect (at 1.5 0) (size 1 1.6) (layers F.Cu F.Paste F.Mask)
       (net 76 /MPPT_Y+_1/PV-) (solder_paste_margin -0.05))
-    (model Capacitors_SMD.3dshapes/C_1206.wrl
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-res.pretty/R1206.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5941,7 +5981,7 @@
       (net 166 /MPPT_Y-_1/MPPT_OUT) (solder_paste_margin -0.05))
     (pad 2 smd rect (at 1.5 0) (size 1 1.6) (layers F.Cu F.Paste F.Mask)
       (net 70 /MPPT_X+_1/VOUT+) (solder_paste_margin -0.05))
-    (model Capacitors_SMD.3dshapes/C_1206.wrl
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-res.pretty/R1206.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6193,7 +6233,7 @@
       (net 167 /MPPT_Y-_2/MPPT_OUT) (solder_paste_margin -0.05))
     (pad 2 smd rect (at 1.5 0) (size 1 1.6) (layers F.Cu F.Paste F.Mask)
       (net 79 /MPPT_Y-_1/PV-) (solder_paste_margin -0.05))
-    (model Capacitors_SMD.3dshapes/C_1206.wrl
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat-res.pretty/R1206.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6345,6 +6385,11 @@
       (net 55 GND))
     (pad SHLD smd rect (at 4.04 2.65) (size 0.3 1) (layers F.Cu F.Paste F.Mask)
       (net 55 GND))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat.pretty/5034801400_sp.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat:MOLEX_FFC-14 (layer F.Cu) (tedit 5A72AFEF) (tstamp 5A8DD3EA)
@@ -6395,6 +6440,11 @@
       (net 55 GND))
     (pad SHLD smd rect (at 4.04 2.65 90) (size 0.3 1) (layers F.Cu F.Paste F.Mask)
       (net 55 GND))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat.pretty/5034801400_sp.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat:MOLEX_FFC-14 (layer F.Cu) (tedit 5A72AFEF) (tstamp 5A8DD3FE)
@@ -6445,6 +6495,11 @@
       (net 55 GND))
     (pad SHLD smd rect (at 4.04 2.65 90) (size 0.3 1) (layers F.Cu F.Paste F.Mask)
       (net 55 GND))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat.pretty/5034801400_sp.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat:MOLEX_FFC-14 (layer F.Cu) (tedit 5A72AFEF) (tstamp 5A8DD412)
@@ -6495,6 +6550,11 @@
       (net 55 GND))
     (pad SHLD smd rect (at 4.04 2.65 90) (size 0.3 1) (layers F.Cu F.Paste F.Mask)
       (net 55 GND))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat.pretty/5034801400_sp.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat:MOLEX_FFC-14 (layer F.Cu) (tedit 5A72AFEF) (tstamp 5A8DD426)
@@ -6545,6 +6605,11 @@
       (net 55 GND))
     (pad SHLD smd rect (at 4.04 2.65) (size 0.3 1) (layers F.Cu F.Paste F.Mask)
       (net 55 GND))
+    (model ../../../../../home/tobi/Cubesat/panel-connector/KiCad-Lib/SFUSat.pretty/5034801400_sp.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat:TSSOP-16 (layer F.Cu) (tedit 5A779402) (tstamp 5A8DD43A)
