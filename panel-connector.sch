@@ -1014,8 +1014,6 @@ F 3 "" H 5925 3225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5925 3225 5925 1575
-Wire Wire Line
 	6050 3075 5825 3075
 Text Label 5825 3075 2    60   ~ 0
 3v3
@@ -1043,4 +1041,16 @@ F 3 "" H 8125 2175 50  0001 C CNN
 	1    8125 2175
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	8050 2325 8175 2325
+Wire Wire Line
+	6050 2325 5825 2325
+Text Label 5825 2325 2    60   ~ 0
+GPS_RX
+Text Label 8175 2325 0    60   ~ 0
+GPS_TX
+Text Label 8175 2775 0    60   ~ 0
+GPS_RST
+Wire Wire Line
+	5925 3225 5925 1575
 $EndSCHEMATC
