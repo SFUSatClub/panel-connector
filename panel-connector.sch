@@ -447,7 +447,7 @@ L R R1
 U 1 1 5A7AB90D
 P 10600 3150
 F 0 "R1" V 10680 3150 50  0000 C CNN
-F 1 "R" V 10600 3150 50  0000 C CNN
+F 1 "DNP" V 10600 3150 50  0000 C CNN
 F 2 "SFUSat:R_0402" V 10530 3150 50  0001 C CNN
 F 3 "" H 10600 3150 50  0001 C CNN
 	1    10600 3150
@@ -458,7 +458,7 @@ L R R2
 U 1 1 5A7ABC0E
 P 10775 3150
 F 0 "R2" V 10855 3150 50  0000 C CNN
-F 1 "R" V 10775 3150 50  0000 C CNN
+F 1 "DNP" V 10775 3150 50  0000 C CNN
 F 2 "SFUSat:R_0402" V 10705 3150 50  0001 C CNN
 F 3 "" H 10775 3150 50  0001 C CNN
 	1    10775 3150
@@ -647,26 +647,22 @@ z+ face
 $Comp
 L GND #PWR014
 U 1 1 5A8B4A0A
-P 1950 7625
-F 0 "#PWR014" H 1950 7375 50  0001 C CNN
-F 1 "GND" H 1950 7475 50  0000 C CNN
-F 2 "" H 1950 7625 50  0001 C CNN
-F 3 "" H 1950 7625 50  0001 C CNN
-	1    1950 7625
-	1    0    0    -1  
+P 2450 7550
+F 0 "#PWR014" H 2450 7300 50  0001 C CNN
+F 1 "GND" H 2450 7400 50  0000 C CNN
+F 2 "" H 2450 7550 50  0001 C CNN
+F 3 "" H 2450 7550 50  0001 C CNN
+	1    2450 7550
+	0    1    1    0   
 $EndComp
-Text GLabel 2425 7100 0    60   Input ~ 0
-Z+D7
-Text GLabel 2425 7200 0    60   Input ~ 0
-Z+D8
 Text Notes 3150 6475 0    60   ~ 0
-Connected to X- MUX
+Connected to Y- MUX ONLY
 Wire Wire Line
 	2050 700  2050 7400
 Wire Wire Line
-	1975 700  1975 5600
+	1975 700  1975 4850
 Wire Wire Line
-	1900 700  1900 5600
+	1900 700  1900 4975
 Wire Wire Line
 	825  3950 1300 3950
 Wire Wire Line
@@ -815,19 +811,19 @@ Wire Wire Line
 Wire Wire Line
 	4650 5225 4600 5225
 Wire Wire Line
-	4875 825  4875 5525
+	4575 1500 4875 1500
 Wire Wire Line
-	5000 725  5000 5425
+	4875 1500 4875 5525
 Wire Wire Line
-	5000 725  5175 725 
+	5000 725  5000 4600
+Wire Wire Line
+	5000 725  5700 725 
 Wire Wire Line
 	4575 1050 4650 1050
 Wire Wire Line
 	4650 1050 4650 1325
 Wire Wire Line
 	4650 1325 4575 1325
-Wire Wire Line
-	4575 1500 4875 1500
 Connection ~ 4875 1500
 Wire Wire Line
 	4575 875  5000 875 
@@ -857,7 +853,7 @@ Wire Wire Line
 	4575 3425 5000 3425
 Connection ~ 5000 3425
 Wire Wire Line
-	4575 4600 5000 4600
+	5000 4600 4575 4600
 Connection ~ 5000 4600
 Wire Wire Line
 	4600 5400 4875 5400
@@ -893,10 +889,10 @@ Wire Wire Line
 	2050 4600 2200 4600
 Connection ~ 2050 4600
 Wire Wire Line
-	2200 4850 1975 4850
+	1975 4850 2200 4850
 Connection ~ 1975 4850
 Wire Wire Line
-	2200 4975 1900 4975
+	1900 4975 2200 4975
 Connection ~ 1900 4975
 Wire Wire Line
 	2200 5425 1850 5425
@@ -907,30 +903,10 @@ Wire Wire Line
 Wire Wire Line
 	2200 1650 1850 1650
 Wire Wire Line
-	2050 6100 2550 6100
+	1975 6100 2550 6100
 Wire Wire Line
-	2050 7400 2550 7400
+	1975 7400 2550 7400
 Connection ~ 2050 6100
-Wire Wire Line
-	2550 6200 1950 6200
-Wire Wire Line
-	1950 6200 1950 7625
-Wire Wire Line
-	2450 7550 1950 7550
-Connection ~ 1950 7550
-Wire Wire Line
-	2550 7300 1950 7300
-Connection ~ 1950 7300
-Wire Wire Line
-	2550 6700 1950 6700
-Connection ~ 1950 6700
-Wire Wire Line
-	2550 6800 1950 6800
-Connection ~ 1950 6800
-Wire Wire Line
-	2425 7100 2550 7100
-Wire Wire Line
-	2550 7200 2425 7200
 Wire Wire Line
 	10775 3300 10775 3450
 Connection ~ 10600 3350
@@ -1018,13 +994,13 @@ Wire Wire Line
 Text Label 5825 3075 2    60   ~ 0
 3v3
 Wire Wire Line
-	6050 1875 5925 1875
+	5925 1875 6050 1875
 Connection ~ 5925 1875
 Wire Wire Line
 	6050 2025 5925 2025
 Connection ~ 5925 2025
 Wire Wire Line
-	6050 2475 5925 2475
+	5925 2475 6050 2475
 Connection ~ 5925 2475
 Wire Wire Line
 	8050 2775 8175 2775
@@ -1045,12 +1021,414 @@ Wire Wire Line
 	8050 2325 8175 2325
 Wire Wire Line
 	6050 2325 5825 2325
-Text Label 5825 2325 2    60   ~ 0
+Text Label 5525 2325 2    60   ~ 0
 GPS_RX
-Text Label 8175 2325 0    60   ~ 0
+Text Label 8475 2325 0    60   ~ 0
 GPS_TX
 Text Label 8175 2775 0    60   ~ 0
 GPS_RST
 Wire Wire Line
-	5925 3225 5925 1575
+	5925 1875 5925 3225
+Wire Wire Line
+	10325 3650 10575 3650
+Wire Wire Line
+	10575 3550 10325 3550
+Text Label 10575 3550 0    60   ~ 0
+GPS_TX
+Text Label 10575 3650 0    60   ~ 0
+GPS_RX
+$Comp
+L R_0R0_0%_0.063W_0402 R4
+U 1 1 5AA70BEB
+P 8325 2325
+F 0 "R4" H 8325 2375 50  0000 C BNN
+F 1 "0R" H 8325 2275 50  0000 C TNN
+F 2 "SFUSat-res:R_0402" H 8325 2325 50  0001 C CNN
+F 3 "" H 8325 2325 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 8325 2325 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 8325 2325 50  0001 C CNN "Composition"
+F 6 "-" H 8325 2325 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200, Moisture Resistant" H 8325 2325 50  0001 C CNN "Features"
+F 8 "0.015\" (0.37mm)" H 8325 2325 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 8325 2325 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Yageo" H 8325 2325 50  0001 C CNN "Manufacturer 1"
+F 11 "AC0402JR-070RL" H 8325 2325 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "17 Weeks" H 8325 2325 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "2" H 8325 2325 50  0001 C CNN "Number of Terminations"
+F 14 "" H 8325 2325 50  0001 C CNN "Operating Temperature"
+F 15 "0402 (1005 Metric)" H 8325 2325 50  0001 C CNN "Package / Case"
+F 16 "Active" H 8325 2325 50  0001 C CNN "Part Status"
+F 17 "0.063W, 1/16W" H 8325 2325 50  0001 C CNN "Power (Watts)"
+F 18 "0 Ohms" H 8325 2325 50  0001 C CNN "Resistance"
+F 19 "AC" H 8325 2325 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 8325 2325 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 8325 2325 50  0001 C CNN "Supplier 1"
+F 22 "0402" H 8325 2325 50  0001 C CNN "Supplier Device Package"
+F 23 "311-0.0LBCT-ND" H 8325 2325 50  0001 C CNN "Supplier Part Number 1"
+F 24 "-" H 8325 2325 50  0001 C CNN "Temperature Coefficient"
+F 25 "Jumper" H 8325 2325 50  0001 C CNN "Tolerance"
+	1    8325 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_0R0_0%_0.063W_0402 R3
+U 1 1 5AA71BBD
+P 5675 2325
+F 0 "R3" H 5675 2375 50  0000 C BNN
+F 1 "0R" H 5675 2275 50  0000 C TNN
+F 2 "SFUSat-res:R_0402" H 5675 2325 50  0001 C CNN
+F 3 "" H 5675 2325 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 5675 2325 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 5675 2325 50  0001 C CNN "Composition"
+F 6 "-" H 5675 2325 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200, Moisture Resistant" H 5675 2325 50  0001 C CNN "Features"
+F 8 "0.015\" (0.37mm)" H 5675 2325 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 5675 2325 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Yageo" H 5675 2325 50  0001 C CNN "Manufacturer 1"
+F 11 "AC0402JR-070RL" H 5675 2325 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "17 Weeks" H 5675 2325 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "2" H 5675 2325 50  0001 C CNN "Number of Terminations"
+F 14 "" H 5675 2325 50  0001 C CNN "Operating Temperature"
+F 15 "0402 (1005 Metric)" H 5675 2325 50  0001 C CNN "Package / Case"
+F 16 "Active" H 5675 2325 50  0001 C CNN "Part Status"
+F 17 "0.063W, 1/16W" H 5675 2325 50  0001 C CNN "Power (Watts)"
+F 18 "0 Ohms" H 5675 2325 50  0001 C CNN "Resistance"
+F 19 "AC" H 5675 2325 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 5675 2325 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 5675 2325 50  0001 C CNN "Supplier 1"
+F 22 "0402" H 5675 2325 50  0001 C CNN "Supplier Device Package"
+F 23 "311-0.0LBCT-ND" H 5675 2325 50  0001 C CNN "Supplier Part Number 1"
+F 24 "-" H 5675 2325 50  0001 C CNN "Temperature Coefficient"
+F 25 "Jumper" H 5675 2325 50  0001 C CNN "Tolerance"
+	1    5675 2325
+	1    0    0    -1  
+$EndComp
+Text Label 10400 1950 0    60   ~ 0
+3V3
+Wire Wire Line
+	10325 1950 10400 1950
+Text Label 10400 4550 0    60   ~ 0
+3V3
+Wire Wire Line
+	10325 4550 10400 4550
+NoConn ~ 6050 1725
+NoConn ~ 6050 2175
+NoConn ~ 6050 2625
+NoConn ~ 6050 2775
+NoConn ~ 6050 2925
+NoConn ~ 8050 2925
+NoConn ~ 8050 2625
+NoConn ~ 8050 2475
+NoConn ~ 8050 2025
+NoConn ~ 8050 1875
+NoConn ~ 8050 1725
+$Comp
+L GND #PWR020
+U 1 1 5AAAF5E3
+P 2550 7300
+F 0 "#PWR020" H 2550 7050 50  0001 C CNN
+F 1 "GND" H 2550 7150 50  0000 C CNN
+F 2 "" H 2550 7300 50  0001 C CNN
+F 3 "" H 2550 7300 50  0001 C CNN
+	1    2550 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 5AAAF7EF
+P 2550 6200
+F 0 "#PWR021" H 2550 5950 50  0001 C CNN
+F 1 "GND" H 2550 6050 50  0000 C CNN
+F 2 "" H 2550 6200 50  0001 C CNN
+F 3 "" H 2550 6200 50  0001 C CNN
+	1    2550 6200
+	0    1    1    0   
+$EndComp
+Text GLabel 2400 6600 0    60   Input ~ 0
+Z+D_A
+Text GLabel 2400 6900 0    60   Input ~ 0
+Z+D_B
+Wire Wire Line
+	2400 6600 2550 6600
+Wire Wire Line
+	2550 6900 2400 6900
+NoConn ~ 2550 6300
+NoConn ~ 2550 6400
+NoConn ~ 2550 6500
+NoConn ~ 2550 7000
+NoConn ~ 2550 7100
+NoConn ~ 2550 7200
+NoConn ~ 9225 4750
+NoConn ~ 9225 4650
+NoConn ~ 9225 4550
+NoConn ~ 9225 4450
+NoConn ~ 9225 4350
+NoConn ~ 9225 4250
+NoConn ~ 9225 4150
+NoConn ~ 9225 4050
+NoConn ~ 9225 3950
+NoConn ~ 9225 3850
+NoConn ~ 9225 3750
+NoConn ~ 9225 3650
+NoConn ~ 9225 3550
+NoConn ~ 9225 3450
+NoConn ~ 9225 3350
+NoConn ~ 9225 3250
+NoConn ~ 9225 3150
+NoConn ~ 9225 3050
+NoConn ~ 9225 2950
+NoConn ~ 9225 2850
+NoConn ~ 9225 2750
+NoConn ~ 9225 2650
+NoConn ~ 9225 2550
+NoConn ~ 9225 2450
+NoConn ~ 9225 2350
+NoConn ~ 9225 2250
+NoConn ~ 9225 2150
+NoConn ~ 9225 2050
+NoConn ~ 10325 2750
+NoConn ~ 10325 2650
+NoConn ~ 10325 2350
+NoConn ~ 10325 2250
+NoConn ~ 10325 2150
+NoConn ~ 10325 2050
+NoConn ~ 10325 1850
+NoConn ~ 9225 1750
+NoConn ~ 9225 1850
+NoConn ~ 9225 1950
+NoConn ~ 10325 2850
+NoConn ~ 10325 2950
+NoConn ~ 10325 3050
+NoConn ~ 10325 3150
+NoConn ~ 10325 3250
+NoConn ~ 10325 3750
+NoConn ~ 10325 3850
+NoConn ~ 10325 4350
+NoConn ~ 10325 4450
+NoConn ~ 10325 4650
+NoConn ~ 10325 4750
+$Comp
+L GND #PWR022
+U 1 1 5AA3E63B
+P 2425 6750
+F 0 "#PWR022" H 2425 6500 50  0001 C CNN
+F 1 "GND" H 2425 6600 50  0000 C CNN
+F 2 "" H 2425 6750 50  0001 C CNN
+F 3 "" H 2425 6750 50  0001 C CNN
+	1    2425 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2425 6750 2475 6750
+Wire Wire Line
+	2475 6700 2475 6800
+Wire Wire Line
+	2475 6700 2550 6700
+Wire Wire Line
+	2475 6800 2550 6800
+Connection ~ 2475 6750
+$Comp
+L C C1
+U 1 1 5AA4484C
+P 1825 6100
+F 0 "C1" H 1850 6200 50  0000 L CNN
+F 1 "DNP" H 1850 6000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1863 5950 50  0001 C CNN
+F 3 "" H 1825 6100 50  0001 C CNN
+	1    1825 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 5AA44853
+P 1675 6100
+F 0 "#PWR023" H 1675 5850 50  0001 C CNN
+F 1 "GND" H 1675 5950 50  0000 C CNN
+F 2 "" H 1675 6100 50  0001 C CNN
+F 3 "" H 1675 6100 50  0001 C CNN
+	1    1675 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5AA479A0
+P 1825 7400
+F 0 "C2" H 1850 7500 50  0000 L CNN
+F 1 "DNP" H 1850 7300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1863 7250 50  0001 C CNN
+F 3 "" H 1825 7400 50  0001 C CNN
+	1    1825 7400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 5AA479A6
+P 1675 7400
+F 0 "#PWR024" H 1675 7150 50  0001 C CNN
+F 1 "GND" H 1675 7250 50  0000 C CNN
+F 2 "" H 1675 7400 50  0001 C CNN
+F 3 "" H 1675 7400 50  0001 C CNN
+	1    1675 7400
+	0    1    1    0   
+$EndComp
+Connection ~ 2050 7400
+$Comp
+L B3B-XH-A(LF)(SN) J7
+U 1 1 5AA4C789
+P 5900 825
+F 0 "J7" H 5900 1000 50  0000 C BNN
+F 1 "B3B-XH-A(LF)(SN)" V 6000 825 50  0000 C TNN
+F 2 "SFUSat:B3B-XH-A" H 5900 825 50  0001 C CNN
+F 3 "" H 5900 825 50  0001 C CNN
+F 4 "-" H 5900 825 50  0001 C CNN "Applications"
+F 5 "Connectors, Interconnects - Rectangular Connectors - Headers, Male Pins" H 5900 825 50  0001 C CNN "Categories"
+F 6 "Header" H 5900 825 50  0001 C CNN "Connector Type"
+F 7 "Tin" H 5900 825 50  0001 C CNN "Contact Finish - Mating"
+F 8 "Tin" H 5900 825 50  0001 C CNN "Contact Finish - Post"
+F 9 "-" H 5900 825 50  0001 C CNN "Contact Finish Thickness - Mating"
+F 10 "-" H 5900 825 50  0001 C CNN "Contact Finish Thickness - Post"
+F 11 "-" H 5900 825 50  0001 C CNN "Contact Length - Mating"
+F 12 "0.134\" (3.40mm)" H 5900 825 50  0001 C CNN "Contact Length - Post"
+F 13 "Brass" H 5900 825 50  0001 C CNN "Contact Material"
+F 14 "Square" H 5900 825 50  0001 C CNN "Contact Shape"
+F 15 "Male Pin" H 5900 825 50  0001 C CNN "Contact Type"
+F 16 "3A" H 5900 825 50  0001 C CNN "Current Rating"
+F 17 "Detent Lock" H 5900 825 50  0001 C CNN "Fastening Type"
+F 18 "-" H 5900 825 50  0001 C CNN "Features"
+F 19 "-" H 5900 825 50  0001 C CNN "Ingress Protection"
+F 20 "Natural" H 5900 825 50  0001 C CNN "Insulation Color"
+F 21 "0.276\" (7.00mm)" H 5900 825 50  0001 C CNN "Insulation Height"
+F 22 "Polyamide (PA66), Nylon 6/6" H 5900 825 50  0001 C CNN "Insulation Material"
+F 23 "Lead free / RoHS Compliant" H 5900 825 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 24 "JST Sales America Inc." H 5900 825 50  0001 C CNN "Manufacturer 1"
+F 25 "B3B-XH-A(LF)(SN)" H 5900 825 50  0001 C CNN "Manufacturer Part Number 1"
+F 26 "14 Weeks" H 5900 825 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 27 "9.8mm" H 5900 825 50  0001 C CNN "Mated Stacking Heights"
+F 28 "UL94 V-0" H 5900 825 50  0001 C CNN "Material Flammability Rating"
+F 29 "Through Hole" H 5900 825 50  0001 C CNN "Mounting Type"
+F 30 "3" H 5900 825 50  0001 C CNN "Number of Positions"
+F 31 "All" H 5900 825 50  0001 C CNN "Number of Positions Loaded"
+F 32 "1" H 5900 825 50  0001 C CNN "Number of Rows"
+F 33 "-25°C ~ 85°C" H 5900 825 50  0001 C CNN "Operating Temperature"
+F 34 "-" H 5900 825 50  0001 C CNN "Overall Contact Length"
+F 35 "Active" H 5900 825 50  0001 C CNN "Part Status"
+F 36 "0.098\" (2.50mm)" H 5900 825 50  0001 C CNN "Pitch - Mating"
+F 37 "-" H 5900 825 50  0001 C CNN "Row Spacing - Mating"
+F 38 "XH" H 5900 825 50  0001 C CNN "Series"
+F 39 "Shrouded - 4 Wall" H 5900 825 50  0001 C CNN "Shrouding"
+F 40 "Board to Cable/Wire" H 5900 825 50  0001 C CNN "Style"
+F 41 "Digi-Key" H 5900 825 50  0001 C CNN "Supplier 1"
+F 42 "455-2248-ND" H 5900 825 50  0001 C CNN "Supplier Part Number 1"
+F 43 "Press-Fit, Solder" H 5900 825 50  0001 C CNN "Termination"
+F 44 "250V" H 5900 825 50  0001 C CNN "Voltage Rating"
+F 45 "XHP-3" H 5900 825 50  0001 C CNN "Mating Part Number"
+F 46 "455-2219-ND" H 5900 825 50  0001 C CNN "Mating Part Digikey"
+	1    5900 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 5AA50A40
+P 5575 975
+F 0 "#PWR025" H 5575 725 50  0001 C CNN
+F 1 "GND" H 5575 825 50  0000 C CNN
+F 2 "" H 5575 975 50  0001 C CNN
+F 3 "" H 5575 975 50  0001 C CNN
+	1    5575 975 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 825  5575 825 
+Wire Wire Line
+	5575 825  5575 975 
+Wire Wire Line
+	5450 925  5700 925 
+Connection ~ 5575 925 
+Wire Wire Line
+	10325 2550 10450 2550
+$Comp
+L TEST_1P J8
+U 1 1 5AA59D92
+P 4675 1175
+F 0 "J8" H 4675 1445 50  0000 C CNN
+F 1 "TEST_1P" H 4675 1375 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 4875 1175 50  0001 C CNN
+F 3 "" H 4875 1175 50  0001 C CNN
+	1    4675 1175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 1175 4675 1175
+Connection ~ 4650 1175
+$Comp
+L TEST_1P J12
+U 1 1 5AA5CBAE
+P 5325 700
+F 0 "J12" H 5325 970 50  0000 C CNN
+F 1 "TEST_1P" H 5325 900 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 5525 700 50  0001 C CNN
+F 3 "" H 5525 700 50  0001 C CNN
+	1    5325 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J13
+U 1 1 5AA5FC1E
+P 5450 925
+F 0 "J13" H 5450 1195 50  0000 C CNN
+F 1 "TEST_1P" H 5450 1125 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 5650 925 50  0001 C CNN
+F 3 "" H 5650 925 50  0001 C CNN
+	1    5450 925 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5325 700  5325 725 
+Connection ~ 5325 725 
+$Comp
+L TEST_1P J9
+U 1 1 5AA60AAB
+P 4675 2450
+F 0 "J9" H 4675 2720 50  0000 C CNN
+F 1 "TEST_1P" H 4675 2650 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 4875 2450 50  0001 C CNN
+F 3 "" H 4875 2450 50  0001 C CNN
+	1    4675 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J11
+U 1 1 5AA6151F
+P 4700 3750
+F 0 "J11" H 4700 4020 50  0000 C CNN
+F 1 "TEST_1P" H 4700 3950 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 4900 3750 50  0001 C CNN
+F 3 "" H 4900 3750 50  0001 C CNN
+	1    4700 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J10
+U 1 1 5AA63E37
+P 4675 5000
+F 0 "J10" H 4675 5270 50  0000 C CNN
+F 1 "TEST_1P" H 4675 5200 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 4875 5000 50  0001 C CNN
+F 3 "" H 4875 5000 50  0001 C CNN
+	1    4675 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 5000 4675 5000
+Connection ~ 4650 5000
+Wire Wire Line
+	4675 3750 4700 3750
+Connection ~ 4675 3750
+Wire Wire Line
+	4650 2450 4675 2450
+Connection ~ 4650 2450
+Text Notes 10950 3575 0    60   ~ 0
+Slave Side Labeling
+Text Label 10450 2550 0    60   ~ 0
+GPS_RST
 $EndSCHEMATC
