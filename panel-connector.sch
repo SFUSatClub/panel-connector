@@ -1431,4 +1431,5 @@ Text Notes 10950 3575 0    60   ~ 0
 Slave Side Labeling
 Text Label 10450 2550 0    60   ~ 0
 GPS_RST
+NoConn ~ 10325 2450
 $EndSCHEMATC
