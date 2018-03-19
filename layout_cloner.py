@@ -44,7 +44,7 @@ from pcbnew import *
 #You can copy the schema parsing with kipy for example from klonor-kicad if you have enough components to justify it
 #schemaTemplate = './boosterilevy/booster.sch'
 #Instead the components to be cloned are currently given manually
-templateReferences = ['C170', 'C171', 'C172', 'C173', 'C174', 'C175', 'R170', 'R171', 'R172', 'R173', 'R174', 'R175', 'R176', 'L170', 'U170', 'D170']
+templateReferences = ['U200', 'C201', 'R201', 'R200', 'C202', 'R202', 'R203', 'R204', 'R205']
 
 #The .kicad-pcb board with a ready layout for the area to be cloned.
 #The cloned area must be surrounded by a (square) zone in the comment layer.
@@ -52,11 +52,11 @@ inputBoard = 'panel-connector.kicad_pcb'
 #Output file, original file remains unmodified
 outputBoardFile = '/home/tobi/Desktop/test-output/test-output.kicad_pcb'
 
-templateRefModulo = -10;	#Difference in the reference numbers between hierarchical sheet
-templateRefStart = 170;		#Starting point of numbering in the first hierarchical sheet
+templateRefModulo = 10;	#Difference in the reference numbers between hierarchical sheet
+templateRefStart = 200;		#Starting point of numbering in the first hierarchical sheet
 move_dx = FromMM(40)		#Spacing between clones in x direction
 move_dy = FromMM(40)		#Spacing between clones in y direction
-clonesX = 8			#Number of clones in x direction
+clonesX = 4			#Number of clones in x direction
 clonesY = 1			#Number of clones in y direction
 
 
