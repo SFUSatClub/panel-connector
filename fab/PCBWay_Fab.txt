@@ -1,0 +1,22 @@
+Fabrication Instructions for PCBWay.com
+Copper layers: 2 layers
+Board Thickness: 1.6mm
+Board Material: FR-4
+FR4-TG: 130 - 140
+Minimum track spacing: 6mil/0.1524mm
+Minimum drill size: 0.3mm
+Soldermask color: White
+Silkscreen color: Black
+Gold fingers: No
+Surface finish: HASL with lead
+Via process: Tented Vias
+Finished Copper: 1 oz.
+Inner Copper: 1 oz.
+
+Stencil type: Non-framework
+Stencil size: Custom 190mmX290mm
+Stencil side: Top
+Stencil Quantity: 1
+Stencil Thickness: 0.10mm
+Existing fiducials: none
+Electropolishing: no
