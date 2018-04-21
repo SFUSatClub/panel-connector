@@ -12,6 +12,7 @@ Surface finish: HASL with lead
 Via process: Tented Vias
 Finished Copper: 1 oz.
 Inner Copper: 1 oz.
+Minimum solder stop width: 150um
 
 Stencil type: Non-framework
 Stencil size: Custom 190mmX290mm
